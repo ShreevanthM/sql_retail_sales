@@ -32,6 +32,13 @@ total_sale  is null ;
 
 select * from retail_sales where category='Clothing' and quantiy>=4 and to_char(sale_date,'yyyy-mm')='2022-11'
 
+ select * from retail_sales 
+where category='Clothing' and
+quantiy>=4 and 
+extract (year  from sale_date)='2022' and 
+extract (month from sale_date )='11'
+
+ 
 select category ,sum(total_sale) as total from retail_sales
 group by category
 
@@ -77,4 +84,5 @@ end shift
 from retail_sales)
 select shift, count (*) as no_order from new_table 
 group by 1 
+
 order by 1
