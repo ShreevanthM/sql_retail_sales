@@ -65,19 +65,17 @@ WHERE
 The following SQL queries were developed to answer specific business questions:
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
-   ```sql
+```sql
 select * from retail_sales where category='Clothing' and quantiy>=4 and to_char(sale_date,'yyyy-mm')='2022-11'
 ```
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022.**:
-
 ```sql
 select * from retail_sales 
 where category='Clothing' and
 quantiy>=4 and 
 extract (year  from sale_date)='2022' and 
 extract (month from sale_date )='11';
-
 ```
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
@@ -166,6 +164,7 @@ order by 1
 ## Conclusion
 
 This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
+
 
 
 
