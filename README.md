@@ -74,7 +74,8 @@ select * from retail_sales
 where category='Clothing' and
 quantiy>=4 and 
 extract (year  from sale_date)='2022' and 
-extract (month from sale_date )='11'
+extract (month from sale_date )='11';
+
 ```
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
@@ -163,6 +164,7 @@ order by 1
 ## Conclusion
 
 This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
+
 
 
 
