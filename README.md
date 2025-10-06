@@ -3,6 +3,9 @@
 
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
+**The results for all 10 SQL queries are available in the Excel file SQL - Retail Sales Analysis_utf and outputs.xlsx.
+Each sheet in the file corresponds to the output of one SQL query.
+To view the data, click “View Raw” and open the downloaded file in Excel.**
 
 ## Objectives
 
@@ -63,9 +66,7 @@ WHERE
 ### 3. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
-**The results for all 10 SQL queries are available in the Excel file SQL - Retail Sales Analysis_utf and outputs.xlsx.
-Each sheet in the file corresponds to the output of one SQL query.
-To view the data, click “View Raw” and open the downloaded file in Excel.**
+
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
 ```sql
@@ -119,7 +120,7 @@ group by 1 ,2) as t1
 where rank=1
 ```
 
-8.**Write a SQL query to find the top 5 customers based on the highest total sales. **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales.**
 ```sql
 select customer_id,sum(total_sale) as total from retail_sales 
 group by 1
@@ -167,6 +168,7 @@ order by 1
 ## Conclusion
 
 This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
+
 
 
 
